@@ -71,7 +71,7 @@ public class Car : MonoBehaviour {
             
         }
 
-        /*
+        
         //For testing
 
         if (Input.GetKey(KeyCode.R))
@@ -130,6 +130,6 @@ public class Car : MonoBehaviour {
             currentSpeed = 20;
             reverseSpeed = 0;
         }
-        */
+        
     } 
 }

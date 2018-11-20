@@ -9,6 +9,7 @@ TagManager:
   - Open
   - Ball
   - Handle
+  - Bridge
   layers:
   - Default
   - TransparentFX
