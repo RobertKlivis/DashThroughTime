@@ -20,10 +20,11 @@ public class Magnet : MonoBehaviour {
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             pointEffector.enabled = true;
             audio.PlayMagnetSound();
+
         }
 
             if (Input.GetKeyUp(KeyCode.Space))
