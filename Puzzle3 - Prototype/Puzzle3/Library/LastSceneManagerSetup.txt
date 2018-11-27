@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
+- path: C:/Documents/Games Preproduction Workshop/DashThroughTime/Puzzle2/Assets/Scenes/SampleScene.unity
   isLoaded: 1
   isActive: 1

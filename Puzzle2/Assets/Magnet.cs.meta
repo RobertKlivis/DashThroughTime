@@ -3,7 +3,9 @@ guid: f0d481572f1627544ba6eea9571b8a1f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pointEffector: {instanceID: 0}
+  - magnetSound: {fileID: 8300000, guid: 6e54d8e3875e4d84da1afb70a48eb6f6, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
