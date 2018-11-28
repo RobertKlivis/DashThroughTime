@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class Car : MonoBehaviour {
 
-    public float acceleration;
-    public float deceleration;
-    public float maxSpeed;
-    public float maxreverseSpeed;
+  //  public float acceleration;
+    //public float deceleration;
+    //public float maxSpeed;
+    //public float maxreverseSpeed;
     public float Tilt;
     public GameObject Respawn;
     public GameObject Ground;
+
+    public Rigidbody2D rb;
 
     public Vector2 vGravity;
 
     private Vector2 Spawn;
 
     private float gravity = 9.81f;
-    private float currentSpeed = 0.0f;
-    private float reverseSpeed = 0.0f;
+   // private float currentSpeed = 0.0f;
+   // private float reverseSpeed = 0.0f;
 
     public bool onGround = false;
     public bool useMagnet = false;
@@ -40,20 +42,9 @@ public class Car : MonoBehaviour {
     void Update()
     {
 
-        currentSpeed += acceleration * Time.deltaTime;
-        reverseSpeed += deceleration * Time.deltaTime;
+       
 
-        if (currentSpeed > maxSpeed)
-        {
-            currentSpeed = maxSpeed;
-        }
-
-        if (reverseSpeed > maxreverseSpeed)
-        {
-            reverseSpeed = maxreverseSpeed;
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow))
+       /* if (Input.GetKey(KeyCode.LeftArrow))
         {
 
 
@@ -71,7 +62,7 @@ public class Car : MonoBehaviour {
 
         }
 
-
+    */
         //For testing
 
         if (Input.GetKey(KeyCode.R))
@@ -80,13 +71,18 @@ public class Car : MonoBehaviour {
             gameObject.transform.rotation = Quaternion.Euler(0, 0, Tilt);
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            acceleration = 100;
-        }
-
     }
-
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            rb.AddForce(transform.right * 10);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            rb.AddForce(-transform.right * 10);
+        }
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
 
@@ -95,22 +91,17 @@ public class Car : MonoBehaviour {
             transform.position = Spawn;
             Tilt += Time.deltaTime * -10;
             gameObject.transform.rotation = Quaternion.Euler(0, 0, Tilt);
-            currentSpeed = 0;
-            reverseSpeed = 0;
+           
         }
 
         if (other.gameObject.tag == "Ground")
         {
             onGround = true;
-            currentSpeed = 10;
-            reverseSpeed = 0;
         }
 
         if (other.gameObject.tag == "Bridge")
         {
             onGround = true;
-            currentSpeed = 10;
-            reverseSpeed = 0;
 
         }
     }
@@ -120,15 +111,13 @@ public class Car : MonoBehaviour {
         if (other.gameObject.tag == "Ground")
         {
             onGround = false;
-            currentSpeed = 20;
-            reverseSpeed = 0;
+           
         }
 
         if (other.gameObject.tag == "Bridge")
         {
             onGround = false;
-            currentSpeed = 20;
-            reverseSpeed = 0;
+            
         }
 
     }

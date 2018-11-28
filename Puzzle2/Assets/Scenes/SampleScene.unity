@@ -3095,13 +3095,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb928f137c359c64f81e9ef11467f346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 200
-  deceleration: 80
-  maxSpeed: 350
-  maxreverseSpeed: 100
   Tilt: 0
   Respawn: {fileID: 0}
   Ground: {fileID: 0}
+  rb: {fileID: 1004532915}
   vGravity: {x: 0, y: -9.81}
   onGround: 0
   useMagnet: 0
