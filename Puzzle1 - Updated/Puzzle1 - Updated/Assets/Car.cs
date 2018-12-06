@@ -76,7 +76,7 @@ public class Car : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb.AddForce(transform.right * 10);
+            rb.AddForce(transform.right * 15);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {

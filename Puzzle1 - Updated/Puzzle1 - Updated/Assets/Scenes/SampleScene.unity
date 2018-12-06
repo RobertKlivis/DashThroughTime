@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54cf28ab052ecd478e452734cf87fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 802016272}
+  ball: {fileID: 529737775}
 --- !u!1 &62758661
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54cf28ab052ecd478e452734cf87fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 529737775}
+  ball: {fileID: 802016272}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1749,7 @@ PointEffector2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1669255082}
-  m_Enabled: 1
+  m_Enabled: 0
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2

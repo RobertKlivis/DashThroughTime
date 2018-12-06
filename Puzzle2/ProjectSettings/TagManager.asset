@@ -12,6 +12,7 @@ TagManager:
   - Open
   - Ball
   - Button
+  - red button
   layers:
   - Default
   - TransparentFX

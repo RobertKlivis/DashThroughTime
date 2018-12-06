@@ -61,6 +61,7 @@
      <Compile Include="Assets\Car.cs" />
      <Compile Include="Assets\Handle.cs" />
      <Compile Include="Assets\Magnet.cs" />
+     <Compile Include="Assets\Particle.cs" />
      <Compile Include="Assets\Passage.cs" />
      <Compile Include="Assets\Seesaw.cs" />
      <Compile Include="Assets\Wheels.cs" />
