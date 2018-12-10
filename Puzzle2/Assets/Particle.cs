@@ -5,7 +5,6 @@ using UnityEngine;
 public class Particle : MonoBehaviour {
 
     private ParticleSystem ps;
-    public GameObject car1;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +27,6 @@ public class Particle : MonoBehaviour {
         {
             ps.Stop();
         }
-		
-	}
+
+    }
 }

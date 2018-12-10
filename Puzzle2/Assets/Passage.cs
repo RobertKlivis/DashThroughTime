@@ -16,13 +16,21 @@ public class Passage : MonoBehaviour {
 	    
 	}
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "red button")
         {
-            Debug.Log("Button activated");
             redWall.SetActive(true);
             blueWall.SetActive(false);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D coll)
+    {
+      if (coll.gameObject.tag == "red button")
+        {
+            blueWall.SetActive(true);
+            redWall.SetActive(false);
         }
     }
 }

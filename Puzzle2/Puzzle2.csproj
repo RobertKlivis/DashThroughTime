@@ -313,10 +313,15 @@
     <Compile Include="Assets\Ball.cs" />
     <Compile Include="Assets\Bridge.cs" />
     <Compile Include="Assets\Button.cs" />
+    <Compile Include="Assets\Button1.cs" />
     <Compile Include="Assets\Camera.cs" />
     <Compile Include="Assets\Car.cs" />
     <Compile Include="Assets\Handle.cs" />
     <Compile Include="Assets\Magnet.cs" />
+    <Compile Include="Assets\Magnet1.cs" />
+    <Compile Include="Assets\Particle.cs" />
+    <Compile Include="Assets\Particle1.cs" />
+    <Compile Include="Assets\Passage.cs" />
     <Compile Include="Assets\Seesaw.cs" />
     <Compile Include="Assets\Wheels.cs" />
   </ItemGroup>
