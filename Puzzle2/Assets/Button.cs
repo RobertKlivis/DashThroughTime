@@ -26,7 +26,6 @@ public class Button : MonoBehaviour {
         if (other.gameObject.tag == "Box")
         {
             Destroy(other.gameObject);
-            Destroy(Door.gameObject);
             Destroy(ball.gameObject);
 
             Open = true;

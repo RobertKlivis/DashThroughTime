@@ -63,6 +63,11 @@ public class Car : MonoBehaviour {
         }
 
     */
+
+	if (Input.GetKey(KeyCode.Escape))
+	{
+		Application.Quit();
+	}
         //For testing
 
         if (Input.GetKey(KeyCode.R))

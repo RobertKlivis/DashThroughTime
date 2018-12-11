@@ -13,6 +13,7 @@ TagManager:
   - Ball
   - Button
   - red button
+  - Car
   layers:
   - Default
   - TransparentFX
